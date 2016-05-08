@@ -1,0 +1,24 @@
+{
+  "name": "book",
+  "description": "'书籍'",
+  "main": "server.js",
+  "authors": [
+    "Yuk"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/yingyuk/book",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/framework",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.5",
+    "angular-ui-router": "^0.2.18"
+  }
+}

@@ -1,0 +1,73 @@
+<div class="well" ng-controller="BookDetailCtrl">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="{{bookDetail.image}}" alt="{{bookDetail.title}}" width="80%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <a ui-sref="booklist.tag({bookType:'{{bookType}}'})" class="btn btn-primary">返回列表</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-12">
+          <form class="form-horizontal" role="form" name="form">
+            <div class="form-group">
+              <label class="col-md-2 control-label"> 书名： </label>
+              <div class="col-md-10">
+                <p class="form-control-static" ng-bind="bookDetail.title"></p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label"> 作者： </label>
+              <div class="col-md-10">
+                <p class="form-control-static" ng-bind="bookDetail.author"></p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label"> 标签： </label>
+              <div class="col-md-10">
+                <p class="form-control-static" ng-bind="bookDetail.tags"></p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label"> 出版日期： </label>
+              <div class="col-md-10">
+                <p class="form-control-static" ng-bind="bookDetail.pubdate"></p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label"> 定价 </label>
+              <div class="col-md-10">
+                <p class="form-control-static" ng-bind="bookDetail.price"></p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label"> 简介: </label>
+              <div class="col-md-10">
+                <p class="form-control-static" ng-bind="bookDetail.summary"></p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label"> 作者简介: </label>
+              <div class="col-md-10">
+                <p class="form-control-static" ng-bind="bookDetail.author_intro">无</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label"> 豆瓣详情页跳转 </label>
+              <div class="col-md-10">
+                <p class="form-control-static">
+                  <a href="{{bookDetail.url}}" target="_blank" ng-bind="bookDetail.title"></a>
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+{
+  "name": "book",
+  "version": "1.0.0",
+  "description": "'书籍'",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js --env=dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yuk",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yingyuk/book.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yingyuk/book/issues"
+  },
+  "homepage": "https://github.com/yingyuk/book#readme",
+  "devDependencies": {
+    "bower": "^1.7.9"
+  }
+}
