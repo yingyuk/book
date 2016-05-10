@@ -9,8 +9,7 @@
   },
   "author": "Yuk",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yingyuk/book.git"
@@ -20,6 +19,7 @@
   },
   "homepage": "https://github.com/yingyuk/book#readme",
   "devDependencies": {
-    "bower": "^1.7.9"
+    "bower": "^1.7.9",
+    "express": "^4.13.4"
   }
 }

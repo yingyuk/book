@@ -2,7 +2,7 @@
  * @Author: yingyuk
  * @Date:   2016-04-30 09:56:30
  * @Last Modified by:   Yuk
- * @Last Modified time: 2016-05-08 14:19:20
+ * @Last Modified time: 2016-05-08 15:41:24
  */
 
 'use strict';
@@ -95,8 +95,10 @@ bookTypeModule.controller('BookTypeCtrl', function($rootScope, $scope, $http, $s
     $scope.active = item;
   };
   $scope.addTpyes = function() {
-    console.log($scope.types);
-    $rootScope.bookTypes.push($scope.types);
+    if ($scope.types) {
+      $rootScope.bookTypes.push($scope.types);
+      $scope.types = '';
+    }
   };
 });
 var loginModule = angular.module("loginModule", []);
