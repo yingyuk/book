@@ -1,8 +1,8 @@
 /*
  * @Author: yingyuk
  * @Date:   2016-04-30 09:55:32
- * @Last Modified by:   Yuk
- * @Last Modified time: 2016-05-08 14:20:25
+ * @Last Modified by:   yingyuk
+ * @Last Modified time: 2016-05-12 18:35:08
  */
 
 'use strict';
@@ -52,5 +52,5 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
     .state('bookdetail', {
       url: '/bookdetail/:bookId',
       templateUrl: 'templates/bookDetail.html'
-    })
+    });
 });
